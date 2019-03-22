@@ -1,0 +1,104 @@
+<!doctype html>
+
+<style>
+
+form {
+    margin: 0 auto;
+    width:300px;
+    padding: 15px;
+    border: 1px solid #B0C4DE;
+    border-radius: 20px;
+  }
+
+h1{
+    font-family: sans-serif;
+    color: #DE411F;
+  }
+
+label {
+    display:inline-block;
+    width:200px;
+    margin-right: -50px;
+    text-align:center;
+    color: #DE411F;
+  }
+
+button, input[type=submit] {
+    text-align: center;
+    color: #DE411F;
+    border-radius: 10px;
+    padding: 14px 20px;
+    margin: 8px 0;
+    cursor: pointer;
+    width: 100px;
+    font-size: 20px;
+    font-family: sans-serif;
+  }
+
+button:hover {
+    opacity: .8;
+  }
+
+</style>
+
+<html lang="en">
+
+
+
+<h1 style="text-align: center;">Register Here</h1>
+<head>
+    <title>Register Here</title>
+</head>
+
+
+<body style="background-image:url('nutrition.jpg');">
+
+<div id = "body">
+<div class="register">
+<form action="testRabbitMQClient.php">
+<center>
+<input type="hidden" name = "type" value= "register">
+  <label for="firstname">First Name</label>
+  <input id="firstname" name="firstname" type="text"  >
+  <br><br>
+  <label for="lastname">Last Name</label>
+  <input id="lastname" name="lastname" type="text"  >
+  <br><br>
+  <label for="username">Username</label>
+  <input id="username" name="username" type="text"  >
+  <br><br>
+  <label for="password">Password</label>
+  <input id="password" name="password" type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" title="Requirements - 1 number,1 uppercase, 1 lowercase letter, and 6 or more characters"required>
+  <br><br>
+	<label for="height"> Height</label>
+	<input id="height" name="height" type="text" placeholder="in inches">
+	<br><br>
+	<label for="weight"> Weight</label>
+	<input id="weight" name="weight" type="text" placeholder="in lbs">
+	<br><br>
+  <label for="gender">Gender</label>
+	<select id="gender" name="gender">
+  <option value =""> Select below </option>
+  <option value ="male"> Male </option>
+  <option value ="female"> Female </option>
+  </select>
+	<br><br>
+  <label> Diet Plan </label>
+	<select name = "dietplan" id="dietplan" required>
+	<option value =""> Select below </option>
+	<option value ="Cals"> Calories </option>
+	<option value ="Carbs"> Carbs </option>
+	<option value ="Protein"> Protein </option>
+	<option value ="Sugar"> Sugar </option>
+  </select>
+  <br><br>
+  <input type="submit" value= "Submit"/>
+  <br><br><br>
+</center>
+</div>
+</div>
+
+</body>
+
+</form>
+</html>
